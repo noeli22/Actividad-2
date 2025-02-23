@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body class="principal">
+    <h1>Breaking Bad - Que comience el juego!</h1>
+    <form id="survey-form" action="raul.rodriguez@proeducaglobal.com">
+
+        <fieldset class="DatosPersonales">
+            <legend id="legend">Datos Personales</legend>
+
+        <label for="name">Nombre: </label>
+            <input id="name" type="text" name="nombre" placeholder=" Ej: Juan" required>
+
+        <label for="apellidos">Apellidos: </label>
+            <input id="apellidos" type="text" placeholder=" Ej: Pérez García" required>
+        
+        <fieldset class="direccion-group">
+            <legend>Dirección Postal</legend>
+            
+            <div class="campo-direccion">
+              <label for="calle">Calle:</label>
+              <input id="calle" type="text" placeholder="Ej: Avenida Principal" >
+            </div>
+          
+            <div class="campo-direccion">
+              <label for="numero">Número:</label>
+              <input id="numero" type="text" placeholder="Ej: 123" >
+            </div>
+          
+            <div class="campo-direccion">
+              <label for="piso">Piso (opcional):</label>
+              <input id="piso" type="text" placeholder="Ej: 3ºB" >
+            </div>
+          
+            <div class="campo-direccion">
+              <label for="codigo-postal">Código Postal:</label>
+              <input id="codigo-postal" type="text" placeholder="Ej: 28001" >
+            </div>
+
+            <div class="cuidad">
+                <label for="cuidad">Ciudad:</label>
+                <input  id="cuidad" type="text"   placeholder="Ej: Madrid" >
+              </div>
+          </fieldset>
+
+        <label for="dni" id="dni-label">DNI:  </label>
+            <input id="dni" type="text" placeholder=" Ej: 12345678A">
+
+        <label for="email" id="email-label">Email:  </label>
+            <input id="email" type="email" placeholder=" Ej: ejemplo@correo.com" required>
+    </fieldset>
+
+    <fieldset>
+        <legend class="legend">Selecciona tu sexo</legend>
+        <label for="mujer" id="mujer-label" > Mujer 
+            <input id="mujer" type="radio" name="sexo" value="mujer">
+        </label>
+        <label for="hombre" id="hombre-label" > Hombre
+            <input id="hombre" type="radio" name="sexo" value="hombre">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend class="legend">Fecha de nacimiento</legend>
+        <label for="fecha" id="fecha-label" > Fecha de nacimiento </label>
+            <input id="fecha" type="date" value="2024-02-19">   
+    </fieldset>
+
+    <fieldset>
+        <legend class="legend">Seleccione un personaje</legend>
+        <select id="dropdown">
+            <option value="" disabled selected >Seleciona una opción</option>
+            <option value="Jessie">Jessie Pinkman </option>
+            <option value="Walter">Walter White</option>
+            <option value="Saul">Saul Goodman</option>
+            <option value="Gustavog">Gustavo Fring</option>
+            <option value="Pollos">Pollos Hermanos</option>
+            <option value="Otros">Otros personajes</option> 
+        </select>
+    </fieldset>
+        
+    <fieldset>
+        <legend class="legend">Comentarios</legend>
+        <label for="coments" id="comments-label"> </label>
+            <textarea id="coments" rows="4" cols="50" placeholder= " Comentarios adicionales..." ></textarea>
+    </fieldset>
+
+        <label for="archivo">Subir archivo (PDF, Word, imágenes):</label>
+        <input type="file" id="archivo" accept=".pdf,.doc,.docx">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+            
+    </form>
+</body>
+</html>
